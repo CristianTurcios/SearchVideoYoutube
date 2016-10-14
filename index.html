@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Laureate Chanell Videos</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/sweetalert.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <h1>{{Name}}</h1>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+      <center>
+        <button type="button" class="btn btn-primary" id="prevPage"  name="prevPage" value="" onClick="obtainPrevOrNextPage('UUvS6-K6Ydmb4gH-kim3AmjA',this.value)">Prev Pag
+        <button type="button" class="btn btn-primary" id="nextPage"  name="nextPage" value="" onClick="obtainPrevOrNextPage('UUvS6-K6Ydmb4gH-kim3AmjA',this.value)">Next Pag
+      </center>
+    </div>
+    <br><br>
+
+    <div class="row" >
+      <div class="col-md-4-offset-4">
+       <div class="input-group" >
+
+         <span class="input-group-btn">
+           <button class="btn btn-primary" type="button" onClick="obtainPlayListId()">
+             <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+           </button>
+         </span>
+
+         <input type="text"   id="search" class="form-control" placeholder="Search for...">
+
+          <span class="input-group-btn">
+           <button  type="button" class="btn btn-success" id="btnSearch" value="" onClick="searchVideos('UCvS6-K6Ydmb4gH-kim3AmjA')" data-loading-text="Loading...">
+             <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+           </button>
+          </span>
+
+       </div>
+      </div>
+    </div>
+
+    <br><br>
+      <div id="Container" class="row container"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="js/sweetalert.min.js"></script>
+  <script src="js/logicProgram.js" charset="utf-8"></script>
+</body>
+</html>
